@@ -1,6 +1,6 @@
 # Mini frontend pentru API
 
-**Link public:** https://USERNAME.github.io/NUME-REPO/
+**Link public:** https://vladrahaian.github.io/frontend/
 
 **API folosit:** https://jsonplaceholder.typicode.com/posts
 
