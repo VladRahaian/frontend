@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postări - mini frontend</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Postările mele</h1>
+    <p>Mini frontend pentru JSONPlaceholder</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Adaugă o postare</h2>
+      <form id="post-form">
+        <label for="title">Titlu</label>
+        <input type="text" id="title" name="title" required minlength="3">
+
+        <label for="body">Conținut</label>
+        <textarea id="body" name="body" rows="4" required></textarea>
+
+        <label for="userId">ID utilizator (1-10)</label>
+        <input type="number" id="userId" name="userId" min="1" max="10" value="1" required>
+
+        <button type="submit" id="submit-btn">Trimite</button>
+      </form>
+      <p id="form-error" class="error" hidden></p>
+    </section>
+
+    <section class="list-section">
+      <h2>Lista de postări</h2>
+      <p id="status">Se încarcă...</p>
+      <ul id="posts-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Temă - Răhăian Vlad</p>
+  </footer>
+</body>
+</html>
