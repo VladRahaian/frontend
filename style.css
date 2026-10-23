@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f5f4;
+  color: #222;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #0f6b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #0f6b57;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #0f6b57;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b4f40;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #b00020;
+  margin-bottom: 0;
+}
+
+#status {
+  font-style: italic;
+}
+
+#posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+
+.post h3 {
+  margin: 0 0 5px;
+  font-size: 1.05rem;
+}
+
+.post p {
+  margin: 0 0 10px;
+}
+
+.delete-btn {
+  background-color: #b00020;
+}
+
+.delete-btn:hover {
+  background-color: #800018;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+}
+
+/* pe ecrane mari: formularul și lista stau una lângă alta */
+@media (min-width: 700px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-section {
+    flex: 1;
+  }
+
+  .list-section {
+    flex: 2;
+  }
+}
